@@ -28,20 +28,10 @@
 
     <scm>
         <tag>v${project.version}</tag>
-        <url>https://github.com/mpusher/mpush</url>
-        <connection>scm:git:git://github.com/mpusher/mpush.git</connection>
-        <developerConnection>scm:git:ssh://github.com/mpusher/mpush.git</developerConnection>
+        <url>https://github.com/Calvin-Wei/mpush</url>
+        <connection>scm:git:git://github.com/Calvin-Wei/mpush.git</connection>
+        <developerConnection>scm:git:ssh://github.com/Calvin-Wei/mpush.git</developerConnection>
     </scm>
-
-    <issueManagement>
-        <system>GitHub Issues</system>
-        <url>https://github.com/mpusher/mpush/issues</url>
-    </issueManagement>
-
-    <organization>
-        <name>MPusher, Inc.</name>
-        <url>https://mpusher.io</url>
-    </organization>
 
     <developers>
         <developer>
