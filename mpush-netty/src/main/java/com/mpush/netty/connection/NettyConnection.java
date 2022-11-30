@@ -89,24 +89,20 @@ public final class NettyConnection implements Connection, ChannelFutureListener 
             }
 
             //阻塞调用线程还是抛异常？
-            //return channel.newPromise().setFailure(new RuntimeException("send data too busy"));
             if (!future.channel().eventLoop().inEventLoop()) {
                 future.awaitUninterruptibly(100);
             }
             return future;
         } else {
-            /*if (listener != null) {
-                channel.newPromise()
-                        .addListener(listener)
-                        .setFailure(new RuntimeException("connection is disconnected"));
-            }*/
             return this.close();
         }
     }
 
     @Override
     public ChannelFuture close() {
-        if (status == STATUS_DISCONNECTED) return null;
+        if (status == STATUS_DISCONNECTED) {
+            return null;
+        }
         this.status = STATUS_DISCONNECTED;
         return this.channel.close();
     }
