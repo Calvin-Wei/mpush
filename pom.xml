@@ -35,9 +35,7 @@
 
     <developers>
         <developer>
-            <name>夜色</name>
-            <email>ohun@live.cn</email>
-            <organization>mpusher</organization>
+            <name>Egbert Wei</name>
         </developer>
     </developers>
 
@@ -278,7 +276,7 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <scope>test</scope>
+            <version>4.13.2</version>
         </dependency>
     </dependencies>
 
